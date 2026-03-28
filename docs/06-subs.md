@@ -184,7 +184,11 @@ transcribe_to_json("audio.mp3", "transcription.json")
 # Passo 2: Converter para SRT
 json_to_srt("transcription.json", "subtitles.srt")
 
-# Passo 3: Gravar legendas no vídeo
+# Passo 4: Editar SRT
+# Abra o .srt gerado em qualquer editor de texto,
+# você pode fazer as correções que desejar.
+
+# Passo 4: Gravar legendas no vídeo
 burn_subtitles_ffmpeg("video.mp4", "subtitles.srt", "video_with_subs.mp4")
 ```
 

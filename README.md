@@ -62,7 +62,7 @@ Pipeline para processar vídeos: detecta rostos, transcrevendo áudio, adiciona 
 
 | Documento | Descrição |
 |-----------|----------|
-| [FFmpeg Ref](docs/12-ffmpeg.md) | 📖 Referência FFmpeg |
+| [FFmpeg Ref](docs/11-ffmpeg.md) | 📖 Referência FFmpeg |
 
 ---
 
@@ -96,6 +96,9 @@ python main.py transcribe video.mp4 --model-name small --device cpu
 
 # Converte JSON para SRT
 python main.py srt transcricao.json --max-char 40
+
+# ⚠️ Neste ponto você pode **editar o arquivo .srt** gerado antes de queimar as legendas
+# Basta abrir em um editor de texto e fazer ajustes na transcrição
 
 # Queima legendas
 python main.py burn video.mp4 legendas.srt --font-size 24
@@ -162,6 +165,6 @@ docs/
 ├── 07-trim.md          Recorte temporal
 ├── 08-audio.md         Melhoria de audio
 ├── 09-merge.md         Merge de comandos
-├── 10-default.md       Pipeline + padroes
+├── 10-default.md       Pipeline + padrões
 └── 11-ffmpeg.md        Referencia FFmpeg
 ```
