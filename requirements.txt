@@ -1,0 +1,13 @@
+# Dependencies for Video Processing Pipeline
+
+# Computer vision
+opencv-python==4.8.1.78
+
+# Numerical computing
+numpy==1.26.4
+
+# Audio transcription
+openai-whisper==20250625
+
+# Progress bars
+tqdm==4.67.3
